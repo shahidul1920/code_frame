@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+    .headerSection header .container .navSection {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerSection header .container .navSection ul {
+        display: none;
+    }
+}

@@ -1,1 +1,51 @@
 @forward '_index';
+
+.headerSection {
+    background: transparent;
+    background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/kjgrn.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    header {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 0.6px rgb(214, 214, 214) solid;
+
+            .logoSection {
+                width: auto;
+                height: 50px;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .navSection {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 1.5rem;
+
+                    a {
+                        color: #05be33;
+                        text-decoration: none;
+                        display: inline-block; // Add this line to allow transform to work
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
