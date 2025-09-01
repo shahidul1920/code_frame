@@ -67,7 +67,7 @@
 
 .main-heading {
   font-size: 50px;
-  line-height: 1.5;
+  line-height: 65px;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -77,11 +77,13 @@
 @media (max-width: 1024px) {
   .main-heading {
     font-size: 2rem;
+    line-height: 35px;
   }
 }
 @media (max-width: 600px) {
   .main-heading {
     font-size: 1.3rem;
+    line-height: 25px;
   }
 }
 
@@ -175,7 +177,17 @@ a:hover, a:focus {
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
 }
-
+.headerSection .image-grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.headerSection .image-grid .img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 @media (max-width: 1024px) {
   .headerSection header .container .navSection {
     display: none;

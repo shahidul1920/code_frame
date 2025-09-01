@@ -65,13 +65,15 @@
         color: var(--primary-color);
     }
     font-size: 50px;
-    line-height: 1.5;
+    line-height: 65px;
     font-weight: 700;
     margin-bottom: 1rem;
     @media (max-width: 1024px) {
         font-size: 2rem;
+        line-height: 35px;
     }
     @media (max-width: 600px) {
         font-size: 1.3rem;
+        line-height: 25px;
     }
 }
