@@ -19,8 +19,9 @@
     align-items: center;
     justify-content: center;
   }
-  .headerSection .container{
-    max-width: 520px;
+  .headerSection .container {
+    max-width: 300px;
+    //background: red;
   }
   .ctaSection {
     display: none;
@@ -33,5 +34,15 @@
     font-size: 1rem;
     font-weight: 500;
     border-radius: 0.25rem;
+  }
+  .headerSection header .container .logoSection {
+    width: auto;
+    height: 40px;
+  }
+  .headerSection header .menuToggle button .bar {
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
   }
 }

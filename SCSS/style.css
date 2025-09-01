@@ -57,6 +57,34 @@
   color: #fff;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.container-padding {
+  padding: 5rem 0;
+}
+
+.main-heading {
+  font-size: 50px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.main-heading span {
+  color: var(--primary-color);
+}
+@media (max-width: 1024px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-heading {
+    font-size: 1.3rem;
+  }
+}
+
 :root {
   --headFont: "Rubik", sans-serif;
   --otherCont: "Intel One Mono", monospace;
@@ -169,7 +197,7 @@ a:hover, a:focus {
     justify-content: center;
   }
   .headerSection .container {
-    max-width: 520px;
+    max-width: 300px;
   }
   .ctaSection {
     display: none;
@@ -182,5 +210,15 @@ a:hover, a:focus {
     font-size: 1rem;
     font-weight: 500;
     border-radius: 0.25rem;
+  }
+  .headerSection header .container .logoSection {
+    width: auto;
+    height: 40px;
+  }
+  .headerSection header .menuToggle button .bar {
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
   }
 }/*# sourceMappingURL=style.css.map */
