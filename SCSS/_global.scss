@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #05be33;
+    --secondary-color: #6c757d;
+    --text-color: #121613;
+}
 .container {
     width: 100%;
     max-width: 1200px;

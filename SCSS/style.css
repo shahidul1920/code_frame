@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #05be33;
+  --secondary-color: #6c757d;
+  --text-color: #121613;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -83,16 +89,6 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-@media (max-width: 1024px) {
-  .headerSection header .container .navSection {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .headerSection header .container .navSection ul {
-    display: none;
-  }
-}
 .headerSection {
   background: transparent;
   background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/kjgrn.png);
@@ -123,12 +119,68 @@ a:hover, a:focus {
   gap: 1.5rem;
 }
 .headerSection header .container .navSection ul a {
-  color: #05be33;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }
 .headerSection header .container .navSection ul a:hover, .headerSection header .container .navSection ul a:focus {
+  color: var(--primary-color);
   text-decoration: none;
   transform: scale(1.1);
+}
+.headerSection header .menuToggle {
+  display: none;
+}
+.headerSection header .menuToggle button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.headerSection header .menuToggle button .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--text-color);
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .headerSection header .container .navSection {
+    display: none;
+  }
+  .headerSection .container {
+    max-width: 700px;
+  }
+  .ctaSection {
+    display: none;
+  }
+  .headerSection header .menuToggle {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .headerSection .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerSection .container {
+    max-width: 520px;
+  }
+  .ctaSection {
+    display: none;
+  }
+  .headerSection header .container .navSection {
+    display: none;
+  }
+  .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+  }
 }/*# sourceMappingURL=style.css.map */
