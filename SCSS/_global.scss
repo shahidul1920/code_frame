@@ -77,3 +77,21 @@
         line-height: 25px;
     }
 }
+
+.rltv{
+    position: relative;
+}
+.rltv .stg{
+    position: absolute;
+    //top: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+    width: 800px;
+    height: auto;
+    transform: rotate(75deg);
+}
