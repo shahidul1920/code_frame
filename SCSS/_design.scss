@@ -1,16 +1,18 @@
 .forBg {
+  width: 100%;
+  height: 100%;
   background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/erygf.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .headerSection {
-  background: transparent;
-  //background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/kjgrn.png);
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
+//   background: transparent;
+//   background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/kjgrn.png);
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
 
   header {
     .container {
@@ -108,5 +110,5 @@
 }
 
 .servicesSec {
-  
+  //background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/erygf.png);
 }
