@@ -65,30 +65,53 @@
   padding: 5rem 0;
 }
 
-.main-heading {
+.main-heading, .other-heading {
   font-size: 50px;
   line-height: 65px;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.main-heading span {
+.main-heading span, .other-heading span {
   color: var(--primary-color);
 }
 @media (max-width: 1024px) {
-  .main-heading {
+  .main-heading, .other-heading {
     font-size: 2rem;
     line-height: 35px;
   }
 }
 @media (max-width: 600px) {
-  .main-heading {
+  .main-heading, .other-heading {
     font-size: 1.3rem;
     line-height: 25px;
   }
 }
 
+.other-heading {
+  font-size: 40px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.other-heading span {
+  color: var(--primary-color);
+}
+@media (max-width: 1024px) {
+  .other-heading {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .other-heading {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+
 .rltv {
   position: relative;
+  overflow-x: hidden;
 }
 
 :root {
@@ -123,12 +146,15 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-.headerSection {
-  background: transparent;
-  background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/kjgrn.png);
-  background-size: cover;
+.forBg {
+  background-image: url(https://genesysltd.com/wp-content/uploads/2022/09/erygf.png);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.headerSection {
+  background: transparent;
 }
 .headerSection header .container {
   display: flex;
@@ -201,12 +227,11 @@ a:hover, a:focus {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(75deg);
-  max-width: 800px;
-  min-width: 900px;
   height: auto;
   z-index: 1;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.3;
 }
 
 @media (max-width: 1024px) {
@@ -221,6 +246,18 @@ a:hover, a:focus {
   }
   .headerSection header .menuToggle {
     display: block;
+  }
+  .rltv .stg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    max-width: none;
+    min-width: none;
+    height: auto;
+    z-index: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (max-width: 600px) {

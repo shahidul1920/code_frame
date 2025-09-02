@@ -11,8 +11,21 @@
   .headerSection header .menuToggle {
     display: block;
   }
-}
+  
+.rltv .stg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  max-width: none;
+  min-width: none;
+  height: auto;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 
+}
+}
 @media (max-width: 600px) {
   .headerSection .container {
     display: flex;
