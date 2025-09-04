@@ -99,3 +99,20 @@
     position: relative;
     overflow-x: hidden;
 }
+
+.grid{
+    display: grid;
+}
+.grid-center{
+    display: grid;
+    place-items: center;
+}
+.bg-red{
+    background: red;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-4{
+    margin-top: 4rem;
+}
