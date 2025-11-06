@@ -7,6 +7,8 @@
     --primary-color: #05be33;
     --secondary-color: #6c757d;
     --text-color: #121613;
+    --yellowish: #E9D175;
+    --purple: #9B94FF;
 }
 .container {
     max-width: 1200px;
@@ -93,10 +95,19 @@
         line-height: 20px;
     }
 }
+.highlight {
+        color: var(--primary-color);
+    }
 
 .rltv{
     position: relative;
     overflow-x: hidden;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .grid{

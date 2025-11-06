@@ -192,3 +192,32 @@
     height: 450px;
   }
 }
+
+.blackSec{
+  background: #121613;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+  .topHead{
+    text-align: center;
+    width: 100%;
+    h2{
+      font-size: 2rem;
+      line-height: 35px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+  }
+  .boxes{
+    width: 100%;
+    .one{
+      background: var(--yellowish);
+      width: 40%;
+    }
+    .two{
+      background: var(--purple);
+      width: 50%;
+    }
+  }
+}
