@@ -11,6 +11,8 @@
   --text-color: #121613;
   --yellowish: #E9D175;
   --purple: #9B94FF;
+  --snowgray: #eee;
+  --pure: #fff;
 }
 
 .container {
@@ -357,6 +359,10 @@ a:hover, a:focus {
 }
 .blackSec .boxes {
   width: 100%;
+  color: var(--pure);
+}
+.blackSec .boxes h3 {
+  color: var(--pure);
 }
 .blackSec .boxes .one {
   background: var(--yellowish);
@@ -365,6 +371,14 @@ a:hover, a:focus {
 .blackSec .boxes .two {
   background: var(--purple);
   width: 50%;
+}
+.blackSec .singleOne {
+  background: var(--snowgray);
+  color: #121613;
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 1rem;
+  border-radius: 8px;
 }
 
 @media (max-width: 1024px) {

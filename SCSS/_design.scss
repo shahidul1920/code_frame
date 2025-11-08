@@ -211,13 +211,25 @@
   }
   .boxes{
     width: 100%;
+    color: var(--pure);
+    h3{color: var(--pure);}
     .one{
       background: var(--yellowish);
       width: 40%;
+      
     }
     .two{
       background: var(--purple);
       width: 50%;
+      
     }
+  }
+  .singleOne{
+    background: var(--snowgray);
+    color: #121613;
+    width: 60%;
+    margin: 2rem auto 0 auto;
+    padding: 2rem 1rem;
+    border-radius: 8px;
   }
 }
