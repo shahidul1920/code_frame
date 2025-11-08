@@ -177,15 +177,18 @@
     font-weight: 600;
     margin-bottom: 1rem;
   }
-  p{
+
+  p {
     font-size: 16px;
     line-height: 28px;
     color: var(--secondary-color);
   }
 }
-.forstrng{
+
+.forstrng {
   margin-top: 3rem;
-  .thickString{
+
+  .thickString {
     position: absolute;
     left: 0;
     width: auto;
@@ -193,31 +196,35 @@
   }
 }
 
-.blackSec{
+.blackSec {
   background: #121613;
   color: #fff;
   padding: 3rem 2rem;
   text-align: center;
   position: relative;
-  .artStar{
+
+  .artStar {
     position: absolute;
     top: 90px;
     left: 85px;
     width: auto;
     height: 50px;
   }
-  .thinString{
+
+  .thinString {
     position: absolute;
     top: 120px;
     right: 100px;
     width: auto;
     height: 200px;
   }
-  .topHead{
+
+  .topHead {
     text-align: center;
     width: 100%;
     margin-bottom: 2rem;
-    h2{
+
+    h2 {
       font-size: 2rem;
       line-height: 35px;
       font-weight: 700;
@@ -225,37 +232,106 @@
       color: #fff;
     }
   }
-  .boxes{
+
+  .boxes {
     width: 100%;
     justify-content: space-between;
     color: var(--text-color);
-    .one{
+
+    .one {
       background: var(--yellowish);
       width: 32%;
       border-radius: 8px;
       padding: 2rem 1rem;
+
       @media (max-width: 600px) {
         width: 100%;
         margin-bottom: 1rem;
       }
     }
-    .two{
+
+    .two {
       background: var(--purple);
       width: 64%;
       border-radius: 8px;
       padding: 2rem 1rem;
+
       @media(max-width: 600px) {
         width: 100%;
         margin-top: 1rem;
       }
     }
   }
-  .singleOne{
+
+  .singleOne {
     background: var(--snowgray);
     color: #121613;
     width: 100%;
     margin: 2rem auto 0 auto;
-    padding: 2rem 1rem;
     border-radius: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1rem;
+    padding-right: 1rem;
+    .box{
+      padding: 2rem 2rem;
+      text-align: left;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .image{
+      img{
+        width: 100%;
+        height: auto;
+        margin-bottom: -7px;
+      }
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+    .bottomHead{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    gap: 1rem;
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image {
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      height: 100%;
+      h2 {
+        font-size: 2rem;
+        line-height: 35px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #fff;
+
+        .highlight {
+          color: var(--primary-color);
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 28px;
+        color: #ddd;
+      }
+    }
   }
 }
