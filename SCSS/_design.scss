@@ -198,9 +198,25 @@
   color: #fff;
   padding: 3rem 2rem;
   text-align: center;
+  position: relative;
+  .artStar{
+    position: absolute;
+    top: 90px;
+    left: 85px;
+    width: auto;
+    height: 50px;
+  }
+  .thinString{
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    width: auto;
+    height: 200px;
+  }
   .topHead{
     text-align: center;
     width: 100%;
+    margin-bottom: 2rem;
     h2{
       font-size: 2rem;
       line-height: 35px;
@@ -211,23 +227,33 @@
   }
   .boxes{
     width: 100%;
-    color: var(--pure);
-    h3{color: var(--pure);}
+    justify-content: space-between;
+    color: var(--text-color);
     .one{
       background: var(--yellowish);
-      width: 40%;
-      
+      width: 32%;
+      border-radius: 8px;
+      padding: 2rem 1rem;
+      @media (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
     }
     .two{
       background: var(--purple);
-      width: 50%;
-      
+      width: 64%;
+      border-radius: 8px;
+      padding: 2rem 1rem;
+      @media(max-width: 600px) {
+        width: 100%;
+        margin-top: 1rem;
+      }
     }
   }
   .singleOne{
     background: var(--snowgray);
     color: #121613;
-    width: 60%;
+    width: 100%;
     margin: 2rem auto 0 auto;
     padding: 2rem 1rem;
     border-radius: 8px;

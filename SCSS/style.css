@@ -345,10 +345,26 @@ a:hover, a:focus {
   color: #fff;
   padding: 3rem 2rem;
   text-align: center;
+  position: relative;
+}
+.blackSec .artStar {
+  position: absolute;
+  top: 90px;
+  left: 85px;
+  width: auto;
+  height: 50px;
+}
+.blackSec .thinString {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  width: auto;
+  height: 200px;
 }
 .blackSec .topHead {
   text-align: center;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .blackSec .topHead h2 {
   font-size: 2rem;
@@ -359,23 +375,37 @@ a:hover, a:focus {
 }
 .blackSec .boxes {
   width: 100%;
-  color: var(--pure);
-}
-.blackSec .boxes h3 {
-  color: var(--pure);
+  justify-content: space-between;
+  color: var(--text-color);
 }
 .blackSec .boxes .one {
   background: var(--yellowish);
-  width: 40%;
+  width: 32%;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+}
+@media (max-width: 600px) {
+  .blackSec .boxes .one {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 .blackSec .boxes .two {
   background: var(--purple);
-  width: 50%;
+  width: 64%;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+}
+@media (max-width: 600px) {
+  .blackSec .boxes .two {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
 .blackSec .singleOne {
   background: var(--snowgray);
   color: #121613;
-  width: 60%;
+  width: 100%;
   margin: 2rem auto 0 auto;
   padding: 2rem 1rem;
   border-radius: 8px;
